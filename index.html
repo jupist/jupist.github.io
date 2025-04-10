@@ -971,10 +971,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 document.getElementById('analyze-btn').addEventListener('click', function() {
         const text = document.getElementById('text-input').value;
-        if (text.length < 100) { // Changed from 10000 for easier testing
-            alert('Please enter more text for a meaningful analysis (at least 100 characters).');
-            return;
-        }
         
         // Show results container
         document.querySelector('.analysis-results').style.display = 'block';
