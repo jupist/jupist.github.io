@@ -1,45 +1,37 @@
-# Aman Jayesh Portfolio
-
-This repository contains the personal webpage project for Aman Jayesh, showcasing his educational background, achievements, technical skills, and more.
-
-## Project Structure
-
-```
-aman-jayesh-portfolio
-├── index.html          # Main HTML document for the personal webpage
-├── css
-│   ├── styles.css     # Main styles for the webpage
-│   └── animations.css  # CSS animations for the webpage
-├── js
-│   ├── main.js        # Main JavaScript functionality
-│   └── carousel.js    # Functionality for the sideways scrolling carousel
-├── assets
-│   ├── images
-│   │   ├── profile-photo.jpg  # Profile picture of Aman Jayesh
-│   │   └── logos
-│   │       ├── skill1.svg     # Logo for skill 1
-│   │       ├── skill2.svg     # Logo for skill 2
-│   │       └── skill3.svg     # Logo for skill 3
-│   └── files
-│       └── aman-jayesh-cv.pdf # CV of Aman Jayesh
-└── README.md          # Documentation for the project
-```
 
 ## Features
 
-- **Header**: Displays Aman Jayesh's name prominently.
+- **Profile Section**: Displays Aman Jayesh's photo and basic information.
 - **About Me Section**: A brief introduction about Aman.
-- **Educational Background Section**: Details of Aman’s education.
-- **Achievements Section**: Highlights of Aman’s accomplishments.
-- **Technical Skills Section**: A carousel showcasing logos of technical skills.
-- **CV Section**: A hyperlink to download Aman’s CV in PDF format.
+- **Home Gallery**: A collection of images showcasing campus life.
+- **Educational Background Section**: Details of Aman's education at IIITH, KEEMS, DCMIPS, and Start Right School.
+- **Achievements Section**: Highlights of Aman's accomplishments including Chess championships, Brainobrain Abacus, IOQM qualification, and E-Cell Megathon.
+- **Technical Skills Section**: An interactive carousel showcasing technical skills with mouse-controlled navigation.
+- **CV Section**: A hyperlink to download Aman's CV in PDF format.
+- **Text Analysis Tool**: A utility that analyzes text input for:
+  - Basic statistics (letters, words, spaces, newlines, special symbols)
+  - Pronoun usage
+  - Preposition usage
+  - Indefinite article usage
+- **Event Tracking**: JavaScript functionality that logs user interactions with the page.
+
+## Design Elements
+
+- **Custom Fonts**: 
+  - IBM Plex Mono for headings
+  - Oswald for education content
+  - Tektur for technical skills
+  - Lexend for about me and profile content
+  - Nexa-Heavy for general text
+
+- **Interactive Elements**:
+  - Mouse-responsive skills carousel
+  - Hover effects on gallery images
+  - Animated section transitions
 
 ## Setup Instructions
 
 1. Clone the repository to your local machine.
 2. Open `index.html` in a web browser to view the webpage.
 3. Ensure that all assets are correctly linked for images and styles.
-
-## Additional Information
-
-This project is designed to be responsive and modern, utilizing animations for a better user experience. The color scheme and fonts are chosen to reflect a professional yet personal aesthetic.
+4. The site is also available online at: https://jupist.github.io/
