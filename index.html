@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +16,15 @@
     <!-- Add Lexend font for About Me and Profile sections -->
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Add Nexa Bold font -->
-    <link href="https://use.typekit.net/your-project-id.css" rel="stylesheet"> <!-- You'll need a valid Typekit subscription for Nexa -->
+    <link href="https://use.typekit.net/your-project-id.css" rel="stylesheet">
+    <!-- You'll need a valid Typekit subscription for Nexa -->
     <!-- Your existing styles -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Add custom font styles -->
 
 </head>
+
 <body>
     <!-- Fullscreen Loading Animation -->
     <div class="loading-screen">
@@ -35,11 +38,15 @@
     <nav class="side-menu">
         <ul>
             <li><a href="#about" class="menu-item"><i class="fas fa-user"></i> <span>About</span></a></li>
-            <li><a href="#home" class="menu-item"><i class="fas fa-home"></i> <span>Home</span></a></li>
-            <li><a href="#education" class="menu-item"><i class="fas fa-graduation-cap"></i> <span>Education</span></a></li>
-            <li><a href="#achievements" class="menu-item"><i class="fas fa-trophy"></i> <span>Achievements</span></a></li>
+            <li><a href="#education" class="menu-item"><i class="fas fa-graduation-cap"></i> <span>Education</span></a>
+            </li>
+            <li><a href="#experience" class="menu-item"><i class="fas fa-briefcase"></i> <span>Experience</span></a>
+            </li>
+            <li><a href="#projects" class="menu-item"><i class="fas fa-project-diagram"></i> <span>Projects</span></a>
+            </li>
+            <li><a href="#achievements" class="menu-item"><i class="fas fa-trophy"></i> <span>Achievements</span></a>
+            </li>
             <li><a href="#skills" class="menu-item"><i class="fas fa-code"></i> <span>Skills</span></a></li>
-            <li><a href="#cv" class="menu-item"><i class="fas fa-file-pdf"></i> <span>CV</span></a></li>
         </ul>
     </nav>
 
@@ -74,86 +81,95 @@
                             </div>
                             <div class="social-links">
                                 <a href="https://github.com/jupist/" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/aman-jayesh-77b382324" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/aman-jayesh-77b382324" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="assets/files/Resume_Aman_Jayesh.pdf" target="_blank" class="cv-mini-btn">CV</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="about-content-column">
                     <h2>About Me</h2>
-                    
                     <div class="about-section-item">
-                        <h3>Background</h3>
-                        <p>My name is Aman Jayesh and I'm doing a BTech in Computer Science and Engineering at International Institute of Information Technology, Hyderabad. I am from Calicut, Kerala, a beautiful coastal city known for its rich cuisine.</p>
-                    </div>
-                    
-                    <div class="about-section-item">
-                        <h3>Interests</h3>
-                        <p>I love playing badminton, watching movies and doing graphic design</p>
-                    </div>
-                    
-                    <div class="about-section-item">
-                        <h3>Fun Fact</h3>
-                        <p>I've got the annoying habit of starting movies and stopping halfway through</p>
-                    </div>
-                    
-                    <div class="about-section-item">
-                        <h3>Aspirations</h3>
-                        <p>I enjoy doing creative projects and working toghether with people. In my 4 years of college I want to achieve everything I wanted to do when I first joined this place and more.</p>
+                        <p>My name is Aman Jayesh, a second year CSE student at IIIT Hyderabad who is enthusiastic about
+                            mathematics, machine learning and cybersecurity. I love working with people and have a
+                            passion for research and am driven by curiosity.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- New Home Section with Gallery -->
-        <section id="home" class="section">
-            <h2>Home</h2>
-            <div class="home-gallery">
-                <div class="gallery-item">
-                    <img src="assets/images/campus.jpg" alt="Campus View">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/library.jpg" alt="Library">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/student.jpg" alt="Student Portrait">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/classroom.jpg" alt="Classroom">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/technology.jpg" alt="Technology">
-                </div>
-            </div>
-        </section>
 
         <section id="education" class="section">
             <h2>Educational Background</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>IIITH</h3>
-                        <p>2024 to 2028</p>
+                        <h3>IIIT Hyderabad</h3>
+                        <p>B.Tech in CSE (2024 - 2028)</p>
+                        <p class="grade">CGPA: 8.05</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>KEEMS</h3>
-                        <p>11th and 12th</p>
+                        <h3>Kuriakose Elias English Medium School</h3>
+                        <p>Class XI - XII</p>
+                        <p class="grade">Percentage: 98.5%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Apex Mentor</h3>
+                        <p class="org">IIIT Hyderabad | July 2025 – Present</p>
+                        <p>Selected to guide a group of ~30 freshers, conducting bi-weekly interactive sessions to
+                            facilitate their academic and social adaptation to college life.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>DCMIPS</h3>
-                        <p>4th to 10th</p>
+                        <h3>Member</h3>
+                        <p class="org">OSDG (Open Source Developers Group) IIIT Hyderabad | August 2025 – Present</p>
+                        <p>Active member of the open-source community at IIITH; assisted in organizing a Google workshop
+                            on campus as part of OSDG.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Start-Right</h3>
-                        <p>Upto 3rd</p>
-                    </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Audio Guided Microbot</h3>
+                    <p class="tech-stack">ESP32, Keyword Spotting, C++</p>
+                    <p>Implemented Keyword Spotting on an ESP32-controlled microbot using a novel memory-efficient
+                        Multi-Scale Temporal Gating (MSTG) mechanism. Optimized for robustness in high-noise conditions.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Boo - Multiplayer Survival Game</h3>
+                    <p class="tech-stack">C, Socket API, RayLib</p>
+                    <p>Built a fully functional multiplayer survival co-op game entirely in C within 24 hours (2nd Place
+                        at Megathon 2024). Implemented networking using Socket API.</p>
+                </div>
+                <div class="project-card">
+                    <h3>AI Generated Content Detection System</h3>
+                    <p class="tech-stack">Python, Scikit-Learn</p>
+                    <p>Developed an open-source AI-generated content detection system in a 12-hour hackathon (1st Place
+                        at Build2Break 2025). Engineered an ensemble of open-source models.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Respire</h3>
+                    <p class="tech-stack">Deep Learning, ResNet, Signal Processing</p>
+                    <p>Developing a lung-sound classification model to identify conditions using the HF_Lung_V1 dataset.
+                        Utilizing signal processing techniques with ResNet50v2.</p>
                 </div>
             </div>
         </section>
@@ -162,24 +178,29 @@
             <h2>Achievements</h2>
             <div class="achievement-items">
                 <div class="achievement-item">
-                    <i class="fas fa-chess"></i>
-                    <h3>District & State Team Chess Champion</h3>
-                    <p>Individual and Team championships at both district and state levels</p>
-                </div>
-                <div class="achievement-item">
-                    <i class="fas fa-calculator"></i>
-                    <h3>Brainobrain Abacus 2-Time Champion</h3>
-                    <p>State level abacus competition</p>
-                </div>
-                <div class="achievement-item">
-                    <i class="fas fa-square-root-alt"></i>
-                    <h3>Qualified IOQM Stage for Math Olympiad</h3>
-                    <p>Indian Olympiad Qualifier in Mathematics</p>
+                    <i class="fas fa-trophy"></i>
+                    <h3>Build2Break '25 Winner (1st Place)</h3>
+                    <p>Won 20,000 Rs in hackathon organized by OSDG-IIITH</p>
                 </div>
                 <div class="achievement-item">
                     <i class="fas fa-medal"></i>
-                    <h3>IIITH E-Cell Megathon 24' 2nd Place</h3>
-                    <p>Hackathon at IIIT Hyderabad</p>
+                    <h3>Megathon '24 Runner-up (2nd Place)</h3>
+                    <p>Won 15,000 Rs in hackathon organized by E-CELL IIITH</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-star"></i>
+                    <h3>JEE Mains 2024</h3>
+                    <p>Secured All India Rank 1261</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-star"></i>
+                    <h3>JEE Advanced 2024</h3>
+                    <p>Achieved All India Rank 2341</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-chess"></i>
+                    <h3>Kerala State Team Chess Champion</h3>
+                    <p>Individual and Team championships</p>
                 </div>
             </div>
         </section>
@@ -194,103 +215,58 @@
                             <p>C</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                                alt="C++">
                             <p>C++</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-                            <p>HTML</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                            <p>MySQL</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-                            <p>MongoDB</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python">
                             <p>Python</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                            <p>React</p>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                                alt="PyTorch">
+                            <p>PyTorch</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash">
-                            <p>Bash</p>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                                alt="TensorFlow">
+                            <p>TensorFlow</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                                alt="Pandas">
+                            <p>Pandas</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                                alt="NumPy">
+                            <p>NumPy</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                alt="Git">
+                            <p>Git</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-microchip" style="font-size: 3rem; color: #fff;"></i>
+                            <p>ESP32</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-wave-square" style="font-size: 3rem; color: #fff;"></i>
+                            <p>Edge Impulse</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="cv" class="section">
-            <h2>Curriculum Vitae</h2>
-            <div class="cv-container">
-                <a href="assets/files/aman-jayesh-cv.pdf" class="cv-btn" download>Download CV <i class="fas fa-download"></i></a>
-            </div>
-        </section>
     </div>
-    <section id="text-analysis" class="section">
-        <h2>Text Analysis</h2>
-        <div class="text-analysis-container">
-            <textarea id="text-input" placeholder="Enter text (10,000+ words) for analysis..." rows="10" style="width: 100%; padding: 15px; border-radius: 8px; border: 1px solid #ddd; font-family: 'Lexend', sans-serif; margin-bottom: 20px;"></textarea>
-            
-            <button id="analyze-btn" class="cv-btn" style="margin-bottom: 30px;">Analyze Text</button>
-            
-            <div class="analysis-results" style="display: none;">
-                <div class="result-section">
-                    <h3>Basic Statistics</h3>
-                    <div id="basic-stats" class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-label">Letters:</span>
-                            <span id="letter-count" class="stat-value">0</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Words:</span>
-                            <span id="word-count" class="stat-value">0</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Spaces:</span>
-                            <span id="space-count" class="stat-value">0</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Newlines:</span>
-                            <span id="newline-count" class="stat-value">0</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Special Symbols:</span>
-                            <span id="special-count" class="stat-value">0</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="result-section">
-                    <h3>Pronouns</h3>
-                    <div id="pronoun-counts" class="word-counts"></div>
-                </div>
-                
-                <div class="result-section">
-                    <h3>Prepositions</h3>
-                    <div id="preposition-counts" class="word-counts"></div>
-                </div>
-                
-                <div class="result-section">
-                    <h3>Articles</h3>
-                    <div id="article-counts" class="word-counts"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+
     <script src="js/script.js">
-        
+
     </script>
 </body>
+
 </html>

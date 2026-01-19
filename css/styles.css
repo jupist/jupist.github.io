@@ -22,7 +22,9 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Courier New', monospace;
     color: var(--navy);
 }
@@ -69,12 +71,17 @@ h1, h2, h3 {
 /* Side Menu */
 .side-menu {
     position: fixed;
-    height: 100vh;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
     width: 80px;
     background-color: var(--dark);
     transition: width 0.3s ease;
     overflow: hidden;
     z-index: 100;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .side-menu:hover {
@@ -83,7 +90,7 @@ h1, h2, h3 {
 
 .side-menu ul {
     list-style: none;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .side-menu li {
@@ -256,8 +263,8 @@ header h1 {
 /* Achievements */
 .achievement-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
 }
 
 .achievement-item {
@@ -295,24 +302,31 @@ header h1 {
 
 .carousel-container {
     position: relative;
-    width: 650px; /* Exactly enough for 5 items (120px * 5 + 10px margin * 10) */
+    width: 650px;
+    /* Exactly enough for 5 items (120px * 5 + 10px margin * 10) */
     margin: 0 auto;
     overflow: hidden;
     padding: 30px 0;
-    user-select: none; /* Prevent text selection */
-    touch-action: none; /* Disable touch actions */
+    user-select: none;
+    /* Prevent text selection */
+    touch-action: none;
+    /* Disable touch actions */
 }
 
 .carousel {
     display: flex;
     position: relative;
     padding: 20px 0;
-    overflow-x: hidden; /* Changed from auto to hidden to prevent manual scrolling */
+    overflow-x: hidden;
+    /* Changed from auto to hidden to prevent manual scrolling */
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    pointer-events: none; /* Disable pointer events on the carousel */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    pointer-events: none;
+    /* Disable pointer events on the carousel */
 }
 
 .carousel::-webkit-scrollbar {
@@ -379,12 +393,12 @@ header h1 {
 
 .carousel-container::before {
     left: 0;
-    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 .carousel-container::after {
     right: 0;
-    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 /* Hide carousel buttons */
@@ -427,6 +441,7 @@ header h1 {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -517,11 +532,12 @@ header h1 {
         max-width: 650px;
     }
 }
-  /* Add Nexa Bold font-face if you have the font files */
-  @font-face {
+
+/* Add Nexa Bold font-face if you have the font files */
+@font-face {
     font-family: 'Nexa-Heavy';
     src: url('assets/fonts/Nexa-Heavy.ttf') format('ttf'),
-         url('assets/fonts/Nexa-Heavy.ttf') format('ttf');
+        url('assets/fonts/Nexa-Heavy.ttf') format('ttf');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -531,7 +547,9 @@ body {
     font-family: 'Nexa-Heavy', serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'IBM Plex Mono', 'Courier New', monospace;
 }
 
@@ -557,7 +575,8 @@ h1, h2, h3 {
 }
 
 /* Apply Lexend font to profile section content */
-.profile-title, .profile-info-item {
+.profile-title,
+.profile-info-item {
     font-family: 'Lexend', sans-serif;
 }
 
@@ -565,7 +584,8 @@ h1, h2, h3 {
     font-family: 'IBM Plex Mono', 'Courier New', monospace;
 }
 
-.loading-name, .loading-username {
+.loading-name,
+.loading-username {
     font-family: 'IBM Plex Mono', 'Courier New', monospace;
 }
 
@@ -575,18 +595,23 @@ h1, h2, h3 {
     grid-template-columns: 1fr 2fr;
     gap: 40px;
     margin: 40px 30px;
-    background-color: #eaecf0; /* Slightly darker off-white background */
+    background-color: #eaecf0;
+    /* Slightly darker off-white background */
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.25); /* Direct prominent shadow */
-    transform: translateZ(0); /* Force hardware acceleration for better shadow */
+    box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.25);
+    /* Direct prominent shadow */
+    transform: translateZ(0);
+    /* Force hardware acceleration for better shadow */
     transition: all 0.3s ease;
 }
 
 .about-container-alt:hover {
-    box-shadow: 0 15px 60px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-    transform: translateZ(0) translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 15px 60px 15px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow on hover */
+    transform: translateZ(0) translateY(-5px);
+    /* Subtle lift effect */
 }
 
 .about-image-column {
@@ -661,7 +686,8 @@ h1, h2, h3 {
 .profile-info-item i {
     width: 30px;
     margin-right: 10px;
-    color: white; /* Changed icon color to white */
+    color: white;
+    /* Changed icon color to white */
 }
 
 .profile-info-item a {
@@ -754,11 +780,11 @@ h1, h2, h3 {
         grid-template-columns: 1fr;
         margin: 30px 20px;
     }
-    
+
     .about-image-column {
         padding: 30px 20px;
     }
-    
+
     .about-content-column {
         padding: 30px 25px;
     }
@@ -769,13 +795,18 @@ h1, h2, h3 {
     display: flex;
     position: relative;
     padding: 20px 0;
-    overflow-x: auto; /* Changed from hidden to auto to allow manual scrolling */
+    overflow-x: auto;
+    /* Changed from hidden to auto to allow manual scrolling */
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    pointer-events: auto; /* Enable pointer events on the carousel */
-    cursor: grab; /* Show grab cursor to indicate scrollable area */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    pointer-events: auto;
+    /* Enable pointer events on the carousel */
+    cursor: grab;
+    /* Show grab cursor to indicate scrollable area */
 }
 
 .carousel::-webkit-scrollbar {
@@ -793,7 +824,8 @@ h1, h2, h3 {
     scroll-snap-align: center;
 }
 
-.skill-item:hover, .skill-item.active {
+.skill-item:hover,
+.skill-item.active {
     opacity: 1;
     filter: grayscale(0%);
     transform: scale(1.1);
@@ -847,7 +879,8 @@ h1, h2, h3 {
 
 .gallery-item:nth-child(3) {
     grid-column: 3;
-    grid-row: 1 / span 2; /* Make this the portrait image spanning 2 rows */
+    grid-row: 1 / span 2;
+    /* Make this the portrait image spanning 2 rows */
     height: 100%;
 }
 
@@ -867,135 +900,221 @@ h1, h2, h3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 200px);
     }
-    
+
     .gallery-item:nth-child(3) {
         grid-column: 1 / span 2;
         grid-row: 3;
         height: auto;
     }
-    
+
     .gallery-item:nth-child(4) {
         grid-column: 1;
         grid-row: 2;
     }
-    
+
     .gallery-item:nth-child(5) {
         grid-column: 2;
         grid-row: 2;
     }
 }
+
 .text-analysis-container {
-background-color: #f8f9fa;
-padding: 25px;
-border-radius: 12px;
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .analysis-results {
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 .result-section {
-margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .result-section h3 {
-margin-bottom: 15px;
-padding-bottom: 8px;
-border-bottom: 2px solid var(--blue);
-color: var(--navy);
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--blue);
+    color: var(--navy);
 }
 
 .stats-grid {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
 }
 
 .stat-item {
-background-color: white;
-padding: 15px;
-border-radius: 8px;
-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-display: flex;
-justify-content: space-between;
-align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .stat-label {
-font-weight: 500;
-color: #555;
+    font-weight: 500;
+    color: #555;
 }
 
 .stat-value {
-font-family: 'Tektur', monospace;
-font-size: 1.2rem;
-color: var(--blue);
+    font-family: 'Tektur', monospace;
+    font-size: 1.2rem;
+    color: var(--blue);
 }
 
 .word-counts {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
 }
 
 .word-count-item {
-background-color: white;
-padding: 12px 15px;
-border-radius: 8px;
-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-display: flex;
-justify-content: space-between;
-align-items: center;
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .word-count-item .word {
-font-weight: 500;
-color: #444;
+    font-weight: 500;
+    color: #444;
 }
+
 .word-count-item .count {
-font-family: 'Tektur', monospace;
-color: var(--blue);
+    font-family: 'Tektur', monospace;
+    color: var(--blue);
 }
 
 @media screen and (max-width: 768px) {
-.stats-grid, .word-counts {
-    grid-template-columns: 1fr 1fr;
-}
+
+    .stats-grid,
+    .word-counts {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 480px) {
-.stats-grid, .word-counts {
-    grid-template-columns: 1fr;
+
+    .stats-grid,
+    .word-counts {
+        grid-template-columns: 1fr;
+    }
 }
-}
+
 /* Text analysis section layout fixes */
 #text-analysis {
-padding-left: 100px; /* Move content away from menu bar */
-padding-right: 40px;
-max-width: 1200px;
-margin: 0 auto; /* Center the section */
+    padding-left: 100px;
+    /* Move content away from menu bar */
+    padding-right: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center the section */
 }
 
 #analyze-btn {
-display: block;
-margin: 20px auto 30px;
+    display: block;
+    margin: 20px auto 30px;
 }
 
 #text-input {
-width: 100%;
-max-width: 100%;
-box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .analysis-results {
-width: 100%;
-max-width: 100%;
+    width: 100%;
+    max-width: 100%;
 }
 
 .achievement-item p {
-font-family: 'Lexend', sans-serif;
-font-weight: 400;
-line-height: 1.6;
-color: #555;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--blue);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--dark-blue);
+}
+
+.tech-stack {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--blue);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.project-card p {
+    font-family: 'Lexend', sans-serif;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Additional Timeline Styles */
+.grade {
+    font-weight: bold;
+    color: var(--blue);
+    margin-top: 5px;
+}
+
+.org {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.cv-mini-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.cv-mini-btn:hover {
+    background-color: var(--blue);
+    transform: translateY(-3px);
+    color: white;
 }
