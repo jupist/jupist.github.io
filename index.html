@@ -1,276 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aman Jayesh - Portfolio</title>
-    <!-- Add IBM Plex Mono font -->
+    <title>Aman Jayesh</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Add Oswald font for education section -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Add Tektur font for technical skills -->
-    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Add Lexend font for About Me and Profile sections -->
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Add Nexa Bold font -->
-    <link href="https://use.typekit.net/your-project-id.css" rel="stylesheet">
-    <!-- You'll need a valid Typekit subscription for Nexa -->
-    <!-- Your existing styles -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Add custom font styles -->
-
 </head>
-
 <body>
-    <!-- Fullscreen Loading Animation -->
-    <div class="loading-screen">
-        <div class="loading-content">
-            <h1 class="loading-name">Aman Jayesh</h1>
-            <p class="loading-username">@jupist</p>
-        </div>
-    </div>
 
-    <!-- Side Navigation Menu -->
-    <nav class="side-menu">
-        <ul>
-            <li><a href="#about" class="menu-item"><i class="fas fa-user"></i> <span>About</span></a></li>
-            <li><a href="#education" class="menu-item"><i class="fas fa-graduation-cap"></i> <span>Education</span></a>
-            </li>
-            <li><a href="#experience" class="menu-item"><i class="fas fa-briefcase"></i> <span>Experience</span></a>
-            </li>
-            <li><a href="#projects" class="menu-item"><i class="fas fa-project-diagram"></i> <span>Projects</span></a>
-            </li>
-            <li><a href="#achievements" class="menu-item"><i class="fas fa-trophy"></i> <span>Achievements</span></a>
-            </li>
-            <li><a href="#skills" class="menu-item"><i class="fas fa-code"></i> <span>Skills</span></a></li>
-        </ul>
+    <nav class="nav">
+        <a href="#hero" class="nav-name">aman.jayesh</a>
+        <div class="nav-links">
+            <a href="#research">research</a>
+            <a href="#experience">experience</a>
+            <a href="#projects">projects</a>
+            <a href="#skills">skills</a>
+            <a href="assets/files/Resume_Aman_Jayesh.pdf" target="_blank" class="nav-cv">cv ↗</a>
+        </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="content">
-        <header>
-            <h1>Aman Jayesh</h1>
-        </header>
+    <main>
 
-        <section id="about" class="section">
-            <!-- Removed the shadow-wrapper div and applied shadow directly to about-container-alt -->
-            <div class="about-container-alt">
-                <div class="about-image-column">
-                    <div class="profile-card">
-                        <div class="profile-image">
-                            <img src="assets/images/profile-photo.jpg" alt="Aman Jayesh">
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <canvas id="particles"></canvas>
+            <div class="hero-inner">
+                <div class="hero-label mono dim">currently @ iiit hyderabad</div>
+                <h1 class="hero-name">Aman<br>Jayesh</h1>
+                <div class="hero-links">
+                    <a href="https://github.com/jupist" target="_blank" class="hero-link">github</a>
+                    <span class="dim">·</span>
+                    <a href="https://linkedin.com/in/amanjayesh" target="_blank" class="hero-link">linkedin</a>
+                    <span class="dim">·</span>
+                    <a href="mailto:aman.jayesh@students.iiit.ac.in" class="hero-link">mail</a>
+                    <span class="dim">·</span>
+                    <a href="assets/files/Resume_Aman_Jayesh.pdf" target="_blank" class="hero-link">cv</a>
+                </div>
+            </div>
+            <div class="hero-scroll-hint mono dim">scroll ↓</div>
+        </section>
+
+        <!-- RESEARCH -->
+        <section id="research" class="section">
+            <div class="section-header">
+                <span class="section-num mono">01</span>
+                <h2>Research</h2>
+            </div>
+            <div class="research-grid">
+
+                <div class="research-card">
+                    <div class="card-top">
+                        <div class="card-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">TinyML</span>
+                            <span class="tag">IEEE ESL</span>
                         </div>
-                        <div class="profile-details">
-                            <h3>Aman Jayesh</h3>
-                            <p class="profile-title">Computer Science Student</p>
-                            <div class="profile-info-item">
-                                <i class="fas fa-graduation-cap"></i>
-                                <a href="https://www.iiit.ac.in" target="_blank">IIIT Hyderabad</a>
-                            </div>
-                            <div class="profile-info-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Calicut, Kerala</span>
-                            </div>
-                            <div class="profile-info-item">
-                                <i class="fas fa-shuttle-space"></i>
-                                <span>2024 - 2028</span>
-                            </div>
-                            <div class="social-links">
-                                <a href="https://github.com/jupist/" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/aman-jayesh-77b382324" target="_blank"><i
-                                        class="fab fa-linkedin"></i></a>
-                            </div>
-                        </div>
+                        <a href="https://github.com/jupist" target="_blank" class="card-link mono">GitHub ↗</a>
+                    </div>
+                    <h3 class="card-title">SAMSTeG: Noise-Robust Keyword Spotting</h3>
+                    <p class="card-lab mono dim">CVEST Lab · IIIT Hyderabad · under Prof. Abhishek Srivastava</p>
+                    <p class="card-desc">Authored a research paper for IEEE Embedded Systems Letters proposing Multi-Scale Temporal Gating (MSTG) and Hybrid Dropout for extreme edge devices. Achieved 95.71% accuracy on Google Speech Commands — matching SOTA models like BC-ResNet.</p>
+                    <div class="card-status">
+                        <span class="status-dot"></span>
+                        <span class="mono dim">under review</span>
                     </div>
                 </div>
 
-                <div class="about-content-column">
-                    <h2>About Me</h2>
-                    <div>
-                        <p>My name is Aman Jayesh, a second year CSE student at IIIT Hyderabad who is enthusiastic about
-                            mathematics, machine learning and cybersecurity. I love working with people and have a
-                            passion for research and am driven by curiosity.</p>
+                <div class="research-card">
+                    <div class="card-top">
+                        <div class="card-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">LLMs</span>
+                            <span class="tag">Security</span>
+                        </div>
+                        <a href="https://github.com/jupist" target="_blank" class="card-link mono">GitHub ↗</a>
                     </div>
-                    <div class="cv-container" style="text-align: left; margin-top: 20px;">
-                        <a href="assets/files/Resume_Aman_Jayesh.pdf" target="_blank" class="cv-btn">
-                            Download CV <i class="fas fa-download"></i>
-                        </a>
+                    <h3 class="card-title">OSCAPegoat: Automated STIG Compliance</h3>
+                    <p class="card-lab mono dim">CyberMANTHAN Lab · IIIT Hyderabad</p>
+                    <p class="card-desc">Benchmarked 5 local LLMs against OpenSCAP failing tests, achieving 70% automated STIG compliance remediation. Built error-resilient scripts with a 3-iteration self-correcting loop for fully automated compliance fixes.</p>
+                    <div class="card-status">
+                        <span class="status-dot complete"></span>
+                        <span class="mono dim">completed</span>
                     </div>
                 </div>
+
             </div>
         </section>
 
-
-        <section id="education" class="section">
-            <h2>Educational Background</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>IIIT Hyderabad</h3>
-                        <p>B.Tech in CSE (2024 - 2028)</p>
-                        <p class="grade">CGPA: 8.05</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Kuriakose Elias English Medium School</h3>
-                        <p>Class XI - XII</p>
-                        <p class="grade">Percentage: 98.5%</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <!-- EXPERIENCE -->
         <section id="experience" class="section">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Apex Mentor</h3>
-                        <p class="org">IIIT Hyderabad | July 2025 – Present</p>
-                        <p>Selected to guide a group of ~30 freshers, conducting bi-weekly interactive sessions to
-                            facilitate their academic and social adaptation to college life.</p>
+            <div class="section-header">
+                <span class="section-num mono">02</span>
+                <h2>Experience</h2>
+            </div>
+            <div class="exp-list">
+
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span class="exp-date mono dim">Mar 2026 – Present</span>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Undergraduate Researcher <span class="dim">@ <a href="https://cstar.iiit.ac.in" target="_blank">CSTAR, IIIT Hyderabad</a></span></h3>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Member</h3>
-                        <p class="org">OSDG (Open Source Developers Group) IIIT Hyderabad | August 2025 – Present</p>
-                        <p>Active member of the open-source community at IIITH; assisted in organizing a Google workshop
-                            on campus as part of OSDG.</p>
+
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span class="exp-date mono dim">Mar 2026 – Present</span>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Team Head <span class="dim">@ <a href="https://osdg.iiit.ac.in" target="_blank">OSDG, IIIT Hyderabad</a></span></h3>
                     </div>
                 </div>
+
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span class="exp-date mono dim">Jan – Apr 2026</span>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Project Intern <span class="dim">@ <a href="https://sleepalfa.com" target="_blank">SleepAlfa</a></span></h3>
+                    </div>
+                </div>
+
             </div>
         </section>
 
+        <!-- PROJECTS -->
         <section id="projects" class="section">
-            <h2>Projects</h2>
+            <div class="section-header">
+                <span class="section-num mono">03</span>
+                <h2>Projects</h2>
+            </div>
             <div class="project-grid">
+
                 <div class="project-card">
-                    <h3>SAMSTeG</h3>
-                    <p class="tech-stack">Keyword Spotting, Deep Learning, Edge AI</p>
-                    <p>Currently working on a research paper for edge Keyword Spotting using Multi-Scale Temporal Gating
-                        and Hybrid Dropout. Achieved 95.71% accuracy on the Google Speech Commands dataset.
-                    </p>
+                    <div class="card-top">
+                        <div class="card-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="https://github.com/jupist/Felicity" target="_blank">Felicity: College Fest Portal</a></h3>
+                    <p class="card-lab mono dim">DASS Course Project</p>
+                    <p class="card-desc">Full-stack event management portal with a three-tier RBAC system (Admin, Organizer, Participant) enforced via JWT middleware. Event creation with capacity limits, registration, and role-aware dashboards. Frontend on Vercel, MongoDB-backed REST API.</p>
                 </div>
+
                 <div class="project-card">
-                    <h3>Boo - Multiplayer Survival Game</h3>
-                    <p class="tech-stack">C, Socket API, RayLib</p>
-                    <p>Built a fully functional multiplayer survival co-op game entirely in C within 24 hours (2nd Place
-                        at Megathon 2024). Implemented networking using Socket API.</p>
+                    <div class="card-top">
+                        <div class="card-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="https://github.com/jupist/openwheel-gnome" target="_blank">OpenWheel-Gnome</a></h3>
+                    <p class="card-lab mono dim">Open Source</p>
+                    <p class="card-desc">Extended a Linux userspace HID controller for the ASUS ProArt dial to support GNOME. Architecture spans a C daemon reading raw device events and a C++/Qt frontend using D-Bus IPC and profile-based input simulation.</p>
                 </div>
+
                 <div class="project-card">
-                    <h3>AI Generated Content Detection System</h3>
-                    <p class="tech-stack">Python, Scikit-Learn</p>
-                    <p>Developed an open-source AI-generated content detection system in a 12-hour hackathon (1st Place
-                        at Build2Break 2025). Engineered an ensemble of open-source models.</p>
+                    <div class="card-top">
+                        <div class="card-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Socket API</span>
+                            <span class="tag">RayLib</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="https://github.com/jupist" target="_blank">Boo — Multiplayer Survival Game</a></h3>
+                    <p class="card-lab mono dim">Megathon 2024 · 2nd Place</p>
+                    <p class="card-desc">Fully functional multiplayer survival co-op game written entirely in C within 24 hours. Multiplayer networking implemented from scratch using the Socket API.</p>
                 </div>
+
                 <div class="project-card">
-                    <h3>Respire</h3>
-                    <p class="tech-stack">Deep Learning, ResNet, Signal Processing</p>
-                    <p>Developing a lung-sound classification model to identify conditions using the HF_Lung_V1 dataset.
-                        Utilizing signal processing techniques with ResNet50v2.</p>
+                    <div class="card-top">
+                        <div class="card-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">HuggingFace</span>
+                            <span class="tag">ML</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="https://github.com/jupist" target="_blank">AI Content Detection System</a></h3>
+                    <p class="card-lab mono dim">Build2Break 2025 · 1st Place</p>
+                    <p class="card-desc">Open-source AI-generated content detection system built in a 12-hour hackathon. Engineered an ensemble of open-source models for robust detection.</p>
                 </div>
+
             </div>
         </section>
 
-        <section id="achievements" class="section">
-            <h2>Achievements</h2>
-            <div class="achievement-items">
-                <div class="achievement-item">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Build2Break '25 Winner (1st Place)</h3>
-                    <p>Won 20,000 Rs in hackathon organized by OSDG-IIITH</p>
+        <!-- EDUCATION + ACHIEVEMENTS -->
+        <section id="education" class="section section-split">
+            <div class="split-left">
+                <div class="section-header">
+                    <span class="section-num mono">04</span>
+                    <h2>Education</h2>
                 </div>
-                <div class="achievement-item">
-                    <i class="fas fa-medal"></i>
-                    <h3>Megathon '24 Runner-up (2nd Place)</h3>
-                    <p>Won 15,000 Rs in hackathon organized by E-CELL IIITH</p>
+                <div class="edu-item">
+                    <h3>IIIT Hyderabad</h3>
+                    <p class="mono dim">B.Tech · Computer Science &amp; Engineering</p>
+                    <p class="mono dim">July 2024 – May 2028</p>
+                    <p class="edu-cgpa">7.89</p>
                 </div>
-                <div class="achievement-item">
-                    <i class="fas fa-star"></i>
-                    <h3>JEE Mains 2024</h3>
-                    <p>Secured All India Rank 1261</p>
-                </div>
-                <div class="achievement-item">
-                    <i class="fas fa-star"></i>
-                    <h3>JEE Advanced 2024</h3>
-                    <p>Achieved All India Rank 2341</p>
-                </div>
-                <div class="achievement-item">
-                    <i class="fas fa-chess"></i>
-                    <h3>Kerala State Team Chess Champion</h3>
-                    <p>Individual and Team championships</p>
+                <div class="edu-item secondary">
+                    <h3>Kuriakose Elias English Medium School</h3>
+                    <p class="mono dim">Class XI – XII</p>
+                    <p class="edu-cgpa">98.5%</p>
                 </div>
             </div>
-        </section>
 
-        <section id="skills" class="section">
-            <h2>Technical Skills</h2>
-            <div class="carousel-wrapper">
-                <div class="carousel-container">
-                    <div class="carousel">
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
-                            <p>C</p>
+            <div class="split-right">
+                <div class="section-header">
+                    <span class="section-num mono">05</span>
+                    <h2>Achievements</h2>
+                </div>
+                <div class="ach-list">
+                    <div class="ach-item">
+                        <span class="ach-icon">⌘</span>
+                        <div>
+                            <p class="ach-title">Build2Break '25 — 1st Place</p>
+                            <p class="mono dim">Rs. 20,000 · OSDG IIITH</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                                alt="C++">
-                            <p>C++</p>
+                    </div>
+                    <div class="ach-item">
+                        <span class="ach-icon">◈</span>
+                        <div>
+                            <p class="ach-title">Megathon '24 — 2nd Place</p>
+                            <p class="mono dim">Rs. 15,000 · E-Cell IIITH</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                alt="Python">
-                            <p>Python</p>
+                    </div>
+                    <div class="ach-item">
+                        <span class="ach-icon">♟</span>
+                        <div>
+                            <p class="ach-title">Kerala State Team Chess Champion</p>
+                            <p class="mono dim">Individual &amp; Team championships</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
-                                alt="PyTorch">
-                            <p>PyTorch</p>
+                    </div>
+                    <div class="ach-item">
+                        <span class="ach-icon">∴</span>
+                        <div>
+                            <p class="ach-title">JEE Mains AIR 1261</p>
+                            <p class="mono dim">JEE Advanced AIR 2341</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
-                                alt="TensorFlow">
-                            <p>TensorFlow</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
-                                alt="Pandas">
-                            <p>Pandas</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
-                                alt="NumPy">
-                            <p>NumPy</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                                alt="Git">
-                            <p>Git</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-microchip" style="font-size: 3rem; color: #fff;"></i>
-                            <p>ESP32</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-wave-square" style="font-size: 3rem; color: #fff;"></i>
-                            <p>Edge Impulse</p>
+                    </div>
+                    <div class="ach-item">
+                        <span class="ach-icon">◎</span>
+                        <div>
+                            <p class="ach-title">ML Specialization</p>
+                            <p class="mono dim">DeepLearning.AI – Stanford</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-    </div>
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <span class="section-num mono">06</span>
+                <h2>Technical Skills</h2>
+            </div>
+            <div class="skills-layout">
+                <div class="skill-group">
+                    <p class="skill-group-label mono dim">languages</p>
+                    <div class="skill-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-label mono dim">ml / data</p>
+                    <div class="skill-tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Matplotlib</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-label mono dim">web</p>
+                    <div class="skill-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">React</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-label mono dim">tools &amp; platforms</p>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">Shodan</span>
+                        <span class="tag">ESP32</span>
+                        <span class="tag">Edge Impulse</span>
+                        <span class="tag">HuggingFace</span>
+                        <span class="tag">Ollama</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <script src="js/script.js">
+    </main>
 
-    </script>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <p class="mono">Aman Jayesh</p>
+                <p class="mono dim">aman.jayesh@students.iiit.ac.in</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com/jupist" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/amanjayesh" target="_blank">LinkedIn</a>
+                <a href="assets/files/Resume_Aman_Jayesh.pdf" target="_blank">CV</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="mono dim">jupist.github.io</span>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
